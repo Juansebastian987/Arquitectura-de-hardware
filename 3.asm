@@ -22,7 +22,7 @@ suma:
     push ebp
     mov ebp, esp
     mov ecx,0;indice
-    mov eax, [esp+8];dir arrayNumbers
+    mov eax, [ebp+8];dir array
     
     L20:
     add ebx, dword ptr[eax+ecx*4]
