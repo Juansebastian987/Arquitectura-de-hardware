@@ -2,14 +2,14 @@
 .model flat, stdcall
 option casemap : none
 .data
-ArrayNumbers dword 00,05,26,72,00,34,86,19,00,34,65,39
+Array dword 00,05,26,72,00,34,86,19,00,34,65,39
 .code
 start:
-    ;Miguel A00052672 
-    ;Cobo A00348619
-    ;Juan sebastian cardona A00346539    
+    ;Miguel Angel Romero Rosas A00052672 
+    ;Cristian Andres Cobo Ramirez A00348619
+    ;Juan sebastian cardona A00346539  
     mov ebx, 0;suma acumulada = 0
-    lea esi, [ArrayNumbers];direccion arraynumbers
+    lea esi, [Array];direccion arraynumbers
     push esi
     call suma ;llama a procedimiento, es equivalente push porque pone algo en la pila (modifica esp)
     add esp, 4; equivalente a pop esi    
