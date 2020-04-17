@@ -17,6 +17,11 @@ start:
     cmp ecx, 12
     push eax
     jc L11    
+    Loops:
+    pop eax
+    dec ecx
+    cmp ecx, 0
+    jne Loops
     pop ebx; Resultado final                  
     xor eax, eax
     ret
